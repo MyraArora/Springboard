@@ -5,7 +5,7 @@ from pydantic import BaseModel, Field
 from openai import OpenAI
 from dotenv import load_dotenv
 
-# 1. This line reads the secret .env file and loads your API key into memory
+# 1. This line reads the secret .env file and loads your API key
 load_dotenv()
 
 # 2. This starts the OpenAI client using the key it just loaded
