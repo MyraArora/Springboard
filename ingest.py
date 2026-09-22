@@ -5,7 +5,7 @@ from pydantic import BaseModel, Field
 from openai import OpenAI
 from dotenv import load_dotenv
 
-# 1. This line reads the secret .env file and loads your API key
+# 1. This line reads the secret .env file and loads your API key into memory
 load_dotenv()
 
 # 2. This starts the OpenAI client using the key it just loaded
@@ -89,7 +89,7 @@ if __name__ == "__main__":
     Our judges value technical code skills and presentation highly, but do not look at research papers.
     """
 
-    print("Sending text to OpenAI.")
+    print("Sending text to OpenAI...")
     result = extract_opportunity(sample_text)
     print("\n--- EXTRACTED DATA ---")
     print(result.model_dump_json(indent=2))
