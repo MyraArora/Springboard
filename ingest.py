@@ -89,7 +89,7 @@ if __name__ == "__main__":
     Our judges value technical code skills and presentation highly, but do not look at research papers.
     """
 
-    print("Sending text to OpenAI...")
+    print("Sending text to OpenAI.")
     result = extract_opportunity(sample_text)
     print("\n--- EXTRACTED DATA ---")
     print(result.model_dump_json(indent=2))
